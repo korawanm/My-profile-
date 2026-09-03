@@ -1,0 +1,107 @@
+/* นำฟอนต์น่ารัก "Itim" จาก Google Fonts มาใช้ (ถ้าไม่มีอินเทอร์เน็ต จะใช้ฟอนต์ธรรมดาแทน) */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/* ตั้งค่าพื้นฐานของเว็บไซต์ */
+body {
+    background-color: #ffffff;              /* สีพื้นหลัง */
+    color: #594646;                         /* สีตัวอักษร */
+    font-family: 'Itim', sans-serif;        /* ฟอนต์น่ารัก */
+    text-align: center;                     /* จัดข้อความกึ่งกลาง */
+    margin: 0;
+    padding: 20px;                          /* เว้นระยะขอบจอ ไม่ให้เนื้อล้นบนมือถือ */
+}
+
+/* ตกแต่ง Profile Card ให้カードอยู่ตรงกลางหน้าจอ */
+.card {
+    max-width: 420px;                       /* กว้างสุด 420px บนจอใหญ่ */
+    width: 100%;                            /* จอเล็กจะหดตามหน้าจออัตโนมัติ */
+    margin: 30px auto;                      /* จัดกึ่งกลางแนวนอน */
+    padding: 30px 25px;
+    background-color: #ffffff;
+    border: 2px solid #f5dceo;              /* เส้นขอบสีหลัก */
+    border-radius: 24px;                    /* มุมโค้งมน */
+    box-shadow: 0 6px 16px rgba(180, 123, 132, 0.25);  /* เงาฟุ้งสีชมพู */
+}
+
+/* ตกแต่งรูปโปรไฟล์แบบวงกลม */
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;                     /* ทำให้รูปเป็นวงกลม */
+    object-fit: cover;                      /* ตัดรูปให้พอดีวงกลม */
+    border: 6px solid #c3eefa;              /* ขอบรูปสีรอง */
+    box-shadow: 0 4px 10px rgba(89, 70, 70, 0.2);
+    margin-top: 10px;
+}
+
+/* หัวข้อหลัก */
+h1 {
+    font-size: 26px;
+    margin: 15px 0 5px;
+}
+
+/* หัวข้อรอง พร้อมเส้นขีดใต้สีรอง */
+h2 {
+    font-size: 20px;
+    display: inline-block;
+    border-bottom: 3px solid #c3eefa;
+    padding-bottom: 4px;
+    margin-top: 25px;
+}
+
+/* ย่อหน้าทั่วไป */
+p {
+    font-size: 17px;
+    margin: 8px 0;
+}
+
+/* ข้อความต้อนรับ ใช้สีปุ่มเพื่อเพิ่มความหวาน */
+.welcome {
+    color: #b47b84;
+}
+
+/* กล่องข้อมูลส่วนตัว พื้นหลังสีหลัก */
+.info-box {
+    background-color: #f5dceo;
+    border-radius: 16px;
+    padding: 15px 20px;
+    text-align: left;                       /* จัดชิดซ้ายเพื่อให้อ่านง่าย */
+    margin: 15px 0;
+}
+
+/* รายการงานอดิเรก */
+ul {
+    list-style: none;                       /* เอาจุดกลมเดิมออก */
+    padding: 0;
+    margin: 10px auto 20px;
+    display: inline-block;
+}
+
+/* แต่ละรายการทำเป็นป้ายสีรอง */
+li {
+    background-color: #c3eefa;
+    border-radius: 12px;
+    padding: 8px 20px;
+    margin: 8px 0;
+    font-size: 17px;
+}
+
+/* ตกแต่งปุ่ม (ใช้กับ <a> ที่ทำให้หน้าตาเหมือนปุ่ม) */
+.button {
+    display: inline-block;
+    background-color: #b47b84;              /* สีปุ่ม */
+    color: #ffffff;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 50px;                    /* ปุ่มทรงเม็ดแคปซูล */
+    text-decoration: none;                  /* เอาเส้นขีดใต้ลิงก์ออก */
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.2s ease-in-out;       /* ให้ตอน Hover เปลี่ยนนุ่ม ๆ */
+}
+
+/* Hover Effect : เมื่อเอา Mouse วางบนปุ่ม สีจะเข้มขึ้นและขยายเล็กน้อย */
+.button:hover {
+    background-color: #9a6570;
+    transform: scale(1.05);
+}
