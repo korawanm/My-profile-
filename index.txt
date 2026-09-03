@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก | ฝ้าย กรวรรณ</title>
+
+    <!-- เชื่อมไฟล์ CSS เพื่อใช้ตกแต่งเว็บไซต์ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- กล่อง Profile Card จัดอยู่กึ่งกลางหน้าจอ -->
+    <div class="card">
+
+        <!-- ส่วนรูป Profile -->
+        <!-- นำรูปของตัวเองมาวางใน Folder เดียวกันกับไฟล์ HTML แล้วตั้งชื่อว่า profile.jpg -->
+        <img src="profile.jpg" alt="รูปโปรไฟล์ของฉัน" class="profile-pic">
+
+        <!-- ชื่อของฉัน -->
+        <h1>นางสาวกรวรรณ มาเต็ง</h1>
+        <p>ชื่อเล่น : ฝ้าย</p>
+
+        <!-- ข้อความต้อนรับ -->
+        <p class="welcome">ยินดีต้อนรับเข้าสู่เว็บไซต์แนะนำตัวของฝ้ายนะ 🌸</p>
+
+        <!-- ข้อความแนะนำตัวสั้น ๆ -->
+        <p>ปัจจุบันเรียนอยู่ที่คณะพยาบาลศาสตร์ ชั้นปีที่ 2 มหาวิทยาลัยนเรศวร</p>
+
+        <!-- ปุ่มสำหรับไปหน้า About -->
+        <a href="about.html" class="button">รู้จักฉันเพิ่มเติม</a>
+
+    </div>
+
+</body>
+</html>
